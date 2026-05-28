@@ -1,0 +1,4 @@
+C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMake-Test.dir
+C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir

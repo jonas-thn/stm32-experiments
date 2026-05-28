@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\Core\Src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\Core\Src\stm32f4xx_it.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\Core\Src\stm32f4xx_hal_msp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\Core\Src\sysmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\Core\Src\syscalls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\startup_stm32f411xe.s" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\system_stm32f4xx.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_uart.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_rcc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_rcc_ex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_flash.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_flash_ex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_flash_ramfunc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_gpio.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_dma_ex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_dma.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_pwr.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_pwr_ex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_cortex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\thaun\Desktop\Programs\STM32 Experiments\CMake-Test\build\cmake\stm32cubemx\STM32_Drivers.dir\$(Configuration)\stm32f4xx_hal_exti.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{ED62161C-DC48-30C5-962A-DFCF6ECC38AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E0C65318-8852-3C03-BCC1-9C50B4CDAAC0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

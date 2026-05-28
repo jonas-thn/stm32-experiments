@@ -1,0 +1,348 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild-Version 17.14.40+3e7442088 f├╝r .NET Framework
+      Der Buildvorgang wurde am 28.05.2026 23:21:41 gestartet.
+      
+      Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.vcxproj" auf Knoten "1" (Standardziele).
+      PrepareForBuild:
+        Das Verzeichnis "Debug\\" wird erstellt.
+        Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+        Das Verzeichnis "Debug\\CompilerIdC.tlog\\" wird erstellt.
+      InitializeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Die Datei "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" wird gel├Âscht.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Die Erstellung von Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\3.31.2\\CompilerIdC\\CompilerIdC.vcxproj" ist abgeschlossen (Standardziele).
+      
+      Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+          0 Warnung(en)
+          0 Fehler
+      
+      Verstrichene Zeit 00:00:00.78
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/3.31.2/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fstack-usage;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild-Version 17.14.40+3e7442088 f├╝r .NET Framework
+      Der Buildvorgang wurde am 28.05.2026 23:21:42 gestartet.
+      
+      Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" auf Knoten "1" (Standardziele).
+      PrepareForBuild:
+        Das Verzeichnis "Debug\\" wird erstellt.
+        Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+        Das Verzeichnis "Debug\\CompilerIdCXX.tlog\\" wird erstellt.
+      InitializeBuildStatus:
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Die Datei "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" wird gel├Âscht.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Die Erstellung von Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\3.31.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ist abgeschlossen (Standardziele).
+      
+      Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+          0 Warnung(en)
+          0 Fehler
+      
+      Verstrichene Zeit 00:00:00.50
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/3.31.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMakeScratch/TryCompile-vsnr9y"
+      binary: "C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMakeScratch/TryCompile-vsnr9y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/STM32F411XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=CMake-Test.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMakeScratch/TryCompile-vsnr9y'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a5421.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.40+3e7442088 f├╝r .NET Framework
+        Der Buildvorgang wurde am 28.05.2026 23:21:43 gestartet.
+        
+        Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_a5421.dir\\Debug\\" wird erstellt.
+          Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+          Das Verzeichnis "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_a5421.dir\\Debug\\cmTC_a5421.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_a5421.dir\\Debug\\cmTC_a5421.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_a5421.dir\\Debug\\cmTC_a5421.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Wall /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_a5421.dir\\Debug\\\\" /Fd"C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\Debug\\libcmTC_a5421.pdb" /external:W4 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++-Optimierungscompiler Version 19.44.35222 f├╝r x64
+          Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+          cl /c /Wall /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c11 /Fo"cmTC_a5421.dir\\Debug\\\\" /Fd"C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\Debug\\libcmTC_a5421.pdb" /external:W4 /Gd /TC /errorReport:queue  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-O0" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-g3" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          CMakeCCompilerABI.c
+        Lib:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\Lib.exe /OUT:"C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\Debug\\libcmTC_a5421.a" /NOLOGO /MACHINE:X64 cmTC_a5421.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_a5421.vcxproj -> C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\Debug\\libcmTC_a5421.a
+        FinalizeBuildStatus:
+          Die Datei "cmTC_a5421.dir\\Debug\\cmTC_a5421.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_a5421.dir\\Debug\\cmTC_a5421.tlog\\cmTC_a5421.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+        
+        "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj" (Standardziel) (1) ->
+        (ClCompile Ziel) -> 
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-O0" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-g3" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vsnr9y\\cmTC_a5421.vcxproj]
+        
+            14 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:00.35
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMakeScratch/TryCompile-jd1t4b"
+      binary: "C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMakeScratch/TryCompile-jd1t4b"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/STM32F411XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=CMake-Test.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/thaun/Desktop/Programs/STM32 Experiments/CMake-Test/build/CMakeFiles/CMakeScratch/TryCompile-jd1t4b'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2f291.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.40+3e7442088 f├╝r .NET Framework
+        Der Buildvorgang wurde am 28.05.2026 23:21:44 gestartet.
+        
+        Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_2f291.dir\\Debug\\" wird erstellt.
+          Die strukturierte Ausgabe ist aktiviert. Die Formatierung der Compilerdiagnose spiegelt die Fehlerhierarchie wider. Weitere Informationen finden Sie unter https://aka.ms/cpp/structured-output.
+          Das Verzeichnis "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_2f291.dir\\Debug\\cmTC_2f291.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_2f291.dir\\Debug\\cmTC_2f291.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_2f291.dir\\Debug\\cmTC_2f291.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Wall /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f291.dir\\Debug\\\\" /Fd"C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\Debug\\libcmTC_2f291.pdb" /external:W4 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -O0 -g3 "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++-Optimierungscompiler Version 19.44.35222 f├╝r x64
+          Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+          cl /c /Wall /WX- /diagnostics:column /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f291.dir\\Debug\\\\" /Fd"C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\Debug\\libcmTC_2f291.pdb" /external:W4 /Gd /TP /errorReport:queue  -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -fstack-usage -fno-rtti -fno-exceptions -fno-threadsafe-statics -O0 -g3 "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fno-rtti" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fno-exceptions" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-fno-threadsafe-statics" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-O0" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        cl : befehlszeile  warning D9002: Unbekannte Option "-g3" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          CMakeCXXCompilerABI.cpp
+        Lib:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\Lib.exe /OUT:"C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\Debug\\libcmTC_2f291.a" /NOLOGO /MACHINE:X64 cmTC_2f291.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_2f291.vcxproj -> C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\Debug\\libcmTC_2f291.a
+        FinalizeBuildStatus:
+          Die Datei "cmTC_2f291.dir\\Debug\\cmTC_2f291.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_2f291.dir\\Debug\\cmTC_2f291.tlog\\cmTC_2f291.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+        
+        "C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj" (Standardziel) (1) ->
+        (ClCompile Ziel) -> 
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mcpu=cortex-m4" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfpu=fpv4-sp-d16" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-mfloat-abi=hard" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fdata-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-ffunction-sections" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fstack-usage" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fno-rtti" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fno-exceptions" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-fno-threadsafe-statics" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-O0" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+          cl : befehlszeile  warning D9002: Unbekannte Option "-g3" wird ignoriert. [C:\\Users\\thaun\\Desktop\\Programs\\STM32 Experiments\\CMake-Test\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jd1t4b\\cmTC_2f291.vcxproj]
+        
+            17 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:00.35
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:1237 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Tools for STM32 14.3.rel1.20251027-0700) 14.3.1 20250623
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...
