@@ -41,3 +41,7 @@
 184	725	8034912802877220	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj	a5359b3909b2df3d
 98	726	8034912802011462	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj	6cb3d9c9f30893cb
 726	873	8034912808287547	STM32-BareMetal-Console.elf	d17946c1d9fe627f
+16	100	8035008738062388	CMakeFiles/STM32-BareMetal-Console.dir/Core/Src/main.c.obj	5c82f75da83af058
+100	251	8035008738920927	STM32-BareMetal-Console.elf	d17946c1d9fe627f
+16	99	8035048027528247	CMakeFiles/STM32-BareMetal-Console.dir/Core/Src/main.c.obj	5c82f75da83af058
+100	246	8035048028365256	STM32-BareMetal-Console.elf	d17946c1d9fe627f
