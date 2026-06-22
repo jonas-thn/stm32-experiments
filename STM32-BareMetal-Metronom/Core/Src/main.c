@@ -1,8 +1,82 @@
 #include "main.h"
 
+#define CLK_HIGH()  (GPIOE->BSRR = GPIO_BSRR_BS_4)
+#define CLK_LOW()   (GPIOE->BSRR = GPIO_BSRR_BR_4)
+#define DIO_HIGH()  (GPIOE->BSRR = GPIO_BSRR_BS_6)
+#define DIO_LOW()   (GPIOE->BSRR = GPIO_BSRR_BR_6)
+
+const uint8_t TM1637_DigitToSegment[] = {
+    0x3F, // 0
+    0x06, // 1
+    0x5B, // 2
+    0x4F, // 3
+    0x66, // 4
+    0x6D, // 5
+    0x7D, // 6
+    0x07, // 7
+    0x7F, // 8
+    0x6F  // 9
+};
+
 void SystemClock_Config(void);
 
 volatile uint8_t metronom_tick_requestet = 0;
+
+void delay_us(uint32_t us)
+{
+  //approximation
+    for (volatile uint32_t i = 0; i < (us * 30); i++) {}
+}
+
+void TM1637_Start(void)
+{
+    CLK_HIGH();
+    DIO_HIGH();
+    delay_us(2);
+    DIO_LOW();
+    delay_us(2);
+    CLK_LOW();
+}
+
+void TM1637_Stop(void)
+{
+    CLK_LOW();
+    delay_us(2);
+    DIO_LOW();
+    delay_us(2);
+    CLK_HIGH();
+    delay_us(2);
+    DIO_HIGH();
+}
+
+void TM1637_WriteByte(uint8_t data)
+{
+    for (uint8_t i = 0; i < 8; i++)
+    {
+        CLK_LOW();
+        delay_us(2);
+
+        if (data & 0x01) {
+            DIO_HIGH();
+        } else {
+            DIO_LOW();
+        }
+        delay_us(2);
+
+        CLK_HIGH();
+        delay_us(2);
+
+        data = data >> 1;
+    }
+
+    CLK_LOW();
+    delay_us(2);
+    DIO_HIGH(); 
+    delay_us(2);
+    CLK_HIGH(); 
+    delay_us(2);
+    CLK_LOW();
+}
 
 uint16_t ADC_Read_Channel2(void)
 {
@@ -13,6 +87,34 @@ uint16_t ADC_Read_Channel2(void)
   }
 
   return (uint16_t)(ADC1->DR);
+}
+
+void TM1637_ShowBPM(uint32_t bpm)
+{
+    uint8_t digit1 = (bpm / 100) % 10; 
+    uint8_t digit2 = (bpm / 10) % 10;
+    uint8_t digit3 = bpm % 10;
+
+    uint8_t seg1 = (digit1 == 0) ? 0x00 : TM1637_DigitToSegment[digit1];
+    uint8_t seg2 = TM1637_DigitToSegment[digit2];
+    uint8_t seg3 = TM1637_DigitToSegment[digit3];
+    uint8_t seg4 = 0x00; 
+
+    TM1637_Start();
+    TM1637_WriteByte(0x40);
+    TM1637_Stop();
+
+    TM1637_Start();
+    TM1637_WriteByte(0xC0);
+    TM1637_WriteByte(seg1);
+    TM1637_WriteByte(seg2);
+    TM1637_WriteByte(seg3);
+    TM1637_WriteByte(seg4);
+    TM1637_Stop();
+
+    TM1637_Start();
+    TM1637_WriteByte(0x8F);
+    TM1637_Stop();
 }
 
 int main(void)
@@ -66,6 +168,19 @@ int main(void)
   TIM2->EGR |= TIM_EGR_UG;
   TIM2->CR1 |= TIM_CR1_CEN;
 
+  //port e 
+  RCC->AHB1ENR |= RCC_AHB1ENR_GPIOEEN; 
+
+  //display pins output
+  GPIOE->MODER &= ~(GPIO_MODER_MODER4 | GPIO_MODER_MODER6);
+  GPIOE->MODER |=  (GPIO_MODER_MODER4_0 | GPIO_MODER_MODER6_0);
+
+  //high out speed (clean signals)
+  GPIOE->OSPEEDR |= (GPIO_OSPEEDER_OSPEEDR4_1 | GPIO_OSPEEDER_OSPEEDR6_1);
+
+  CLK_HIGH();
+  DIO_HIGH();
+
   uint16_t poti_wert = 0;
 
   while (1)
@@ -80,6 +195,8 @@ int main(void)
     {
       TIM2->EGR |= TIM_EGR_UG;
     }
+
+    TM1637_ShowBPM(bpm);
   }
 }
 
